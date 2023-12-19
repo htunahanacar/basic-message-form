@@ -1,0 +1,21 @@
+label {
+  margin-top: 20px;
+  display: block;
+}
+
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+select,
+textarea {
+  width: 260px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.warning {
+  color: rgba(255, 0, 0, 0.705);
+  font-size: 0.9em;
+}
