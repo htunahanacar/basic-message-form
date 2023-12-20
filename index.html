@@ -7,45 +7,74 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <h1>Message Form</h1>
-    <p class="warning">You need to fill the blanks with "*" symbol.</p>
     <form action="https://httpbin.org/post" method="post">
       <div>
+        <h1>Message Form</h1>
+        <p class="warning">
+          It is required to fill the blanks with '*' symbol.
+        </p>
+      </div>
+      <div class="form-row">
         <input
           type="hidden"
           value="This is hidden form text."
           name="My hidden input"
         />
       </div>
-      <div>
+      <div class="form-row">
         <label for="name">Your name*:</label>
-        <input name="name" id="name" type="text" required />
+        <input
+          name="name"
+          id="name"
+          type="text"
+          placeholder="Ahmet Yılmaz"
+          required
+        />
       </div>
-      <div>
+      <div class="form-row">
         <label for="phone-number">Your phone number*:</label>
-        <input name="phone" id="phone-number" type="phone" required />
+        <input
+          name="phone"
+          id="phone-number"
+          type="phone"
+          placeholder="555 555 5555"
+          required
+        />
       </div>
-      <div>
+      <div class="form-row">
         <label for="email">Your email*:</label>
-        <input name="mail" id="email" type="email" required />
+        <input
+          name="mail"
+          id="email"
+          type="email"
+          placeholder="ahmetyilmaz@gmail.com"
+          required
+        />
       </div>
-      <div>
+      <div class="form-row">
         <label for="message">Your message:</label>
         <textarea name="message" id="message" cols="50" rows="3"></textarea>
       </div>
-      <div>
+      <div class="form-row">
         <label for="city">Your City:</label>
         <select name="city" id="city">
           <option value="istanbul">İstanbul</option>
           <option value="izmir">İzmir</option>
         </select>
       </div>
-      <div>
-        <label for="fav-color">Your favorite color:</label>
-        <input type="radio" name="color" value="Red" checked />Red
-        <input type="radio" name="color" value="Yellow" />Yellow
+      <div class="form-row">
+        <p>Your favorite color:</p>
+        <div class="radio-container">
+          <label
+            ><input type="radio" name="color" value="blue" checked />Blue</label
+          >
+          <label><input type="radio" name="color" value="red" />Red</label>
+          <label
+            ><input type="radio" name="color" value="yellow" />Yellow</label
+          >
+        </div>
       </div>
-      <div class="buttons">
+      <div class="form-row">
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
       </div>
